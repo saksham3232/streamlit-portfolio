@@ -1,6 +1,8 @@
 import streamlit as st
-import json 
+import json
 from streamlit_lottie import st_lottie
+from PIL import Image
+import os
 
 # Load local lottie animation
 def load_lottiefile(filepath: str):
@@ -15,38 +17,51 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# --- Intro Section ---
+# --- Profile Image and Intro Layout ---
+col1, col2 = st.columns([4, 1])
+
+with col2:
+    profile_path = "images/profile.jpg"
+    if os.path.exists(profile_path):
+        image = Image.open(profile_path)
+        st.image(image, caption="Saksham Maurya", width=200)
+    else:
+        st.error("❌ Profile image not found. Please place it in `images/profile.jpg`.")
+
+with col1:
+    st.markdown("""
+        ## Hi, I'm Saksham 👋  
+        # A Data Science Student 🚀  
+
+        By day, I'm diving deep into **Data Structures and Algorithms (DSA)** to sharpen my problem-solving mindset. By night, I immerse myself in **Data Science**, working with real-world datasets to build models in **Machine Learning**, **Deep Learning**, and **Natural Language Processing (NLP)**.  
+    """)
+
 st.markdown("""
-    ## Hi, I'm Saksham 👋
-    # A Data Science Student 🚀  
+                    Currently pursuing my Bachelor's in Computer Applications (BCA), I focus on bridging theory with practice through impactful projects. I specialize in tools and frameworks like **Python**, **C++**, **SQL**, **Streamlit**, **Flask**, **pandas**, **NumPy**, **matplotlib**, **Seaborn**, **Scikit-learn**, **TensorFlow**, and **Keras**.
 
-    By day, I'm diving deep into **Data Structures and Algorithms (DSA)** to sharpen my problem-solving mindset. By night, I immerse myself in **Data Science**, working with real-world datasets to build models in **Machine Learning**, **Deep Learning**, and **Natural Language Processing (NLP)**.  
+        🧠 My interest lies in making data-driven decisions and turning raw data into actionable insights. Whether it’s **fraud detection**, **sentiment analysis**, or **score prediction**, I love creating models that **solve real problems**.
 
-    Currently pursuing my Bachelor's in Computer Applications (BCA), I focus on bridging theory with practice through impactful projects. I specialize in tools and frameworks like **Python**, **C++**, **SQL**, **Streamlit**, **Flask**, **pandas**, **NumPy**, **matplotlib**, **Seaborn**, **Scikit-learn**, **TensorFlow**, and **Keras**.
+        ⚙️ My journey includes:
+        - Building intuitive data apps using **Streamlit**
+        - Developing and deploying ML models using **Scikit-learn**, **XGBoost**, and **TensorFlow**
+        - Working with **large datasets** and applying **EDA**, **feature engineering**, and **model evaluation**
+        - Exploring **LLMs**, AI trends, and **ethical AI** practices
 
-    🧠 My interest lies in making data-driven decisions and turning raw data into actionable insights. Whether it’s **fraud detection**, **sentiment analysis**, or **score prediction**, I love creating models that **solve real problems**.
+        💼 I’ve successfully completed **job simulations with Accenture and BCG**, along with solving over **500+ DSA problems** on platforms like LeetCode and GFG using **Striver's A2Z DSA Sheet**.
 
-    ⚙️ My journey includes:
-    - Building intuitive data apps using **Streamlit**
-    - Developing and deploying ML models using **Scikit-learn**, **XGBoost**, and **TensorFlow**
-    - Working with **large datasets** and applying **EDA**, **feature engineering**, and **model evaluation**
-    - Exploring **LLMs**, AI trends, and **ethical AI** practices
+        📂 This portfolio showcases my **projects**, **achievements**, and **certifications** — reflecting my growth and dedication in the field of AI and Data Science.
 
-    💼 I’ve successfully completed **job simulations with Accenture and BCG**, along with solving over **500+ DSA problems** on platforms like LeetCode and GFG using **Striver's A2Z DSA Sheet**.
+        🌟 When I'm not coding, you'll find me exploring the latest tech trends, contributing to open-source, or writing blogs on machine learning concepts. I believe in continuous learning and strive to stay at the edge of innovation.
 
-    📂 This portfolio showcases my **projects**, **achievements**, and **certifications** — reflecting my growth and dedication in the field of AI and Data Science.
+        📫 Let's connect on [LinkedIn](https://www.linkedin.com/in/saksham-maurya-3feb) | [GitHub](https://github.com/saksham3232) | [Email](mailto:sakshammaurya3232@gmail.com)  
 
-    🌟 When I'm not coding, you'll find me exploring the latest tech trends, contributing to open-source, or writing blogs on machine learning concepts. I believe in continuous learning and strive to stay at the edge of innovation.
-
-    📫 Let's connect on [LinkedIn](https://www.linkedin.com/in/saksham-maurya-3feb) | [GitHub](https://github.com/saksham3232) | [Email](mailto:sakshammaurya3232@gmail.com)  
-
-    🤝 I'm open to **internships**, **research roles**, and **collaborations** in the field of **AI**, **ML**, or **Data Science**. If you have an idea — let’s build it together!
+        🤝 I'm open to **internships**, **research roles**, and **collaborations** in the field of **AI**, **ML**, or **Data Science**. If you have an idea — let’s build it together!
 """)
 
 # --- Resume Download ---
 st.write("📄 Here's my resume:")
 with open("CV_Saksham.pdf", "rb") as file:
-    btn = st.download_button(
+    st.download_button(
         label="Download Resume",
         data=file,
         file_name="Saksham_Maurya_Resume.pdf",
@@ -54,29 +69,27 @@ with open("CV_Saksham.pdf", "rb") as file:
     )
 
 # --- Lottie Animation ---
-
-# Load Lottie Animation
 animation = load_lottiefile("animations/intro.json")
 if animation:
     st_lottie(animation, speed=1, height=300, key="home")
 else:
     st.error("⚠️ Failed to load Lottie animation.")
 
-#--- Footer Styling ---
+# --- Footer Styling ---
 st.markdown("""
-<style>
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-.footer {
-    animation: fadeIn 2s ease-in;
-    text-align: center;
-    font-size: 18px;
-    margin-top: 20px;
-    color: #555;
-}
-</style>
+    <style>
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    .footer {
+        animation: fadeIn 2s ease-in;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 20px;
+        color: #555;
+    }
+    </style>
 """, unsafe_allow_html=True)
 
 # --- Footer HTML ---
