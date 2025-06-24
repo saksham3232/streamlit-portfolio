@@ -61,3 +61,27 @@ with col2:
         st_lottie(lottie_contact, height=300, key="contact")
     else:
         st.write("Animation could not be loaded.")
+
+
+#--- Footer Styling ---
+st.markdown("""
+<style>
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.footer {
+    animation: fadeIn 2s ease-in;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #555;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# --- Footer HTML ---
+st.markdown(
+    '<div class="footer"><b>Made with ❤️ by Saksham | © 2025</b></div>',
+    unsafe_allow_html=True
+)
