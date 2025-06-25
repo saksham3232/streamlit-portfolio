@@ -14,6 +14,7 @@ st.set_page_config(
     page_title="Saksham's Portfolio",
     page_icon=":wave:",
     layout="wide",
+    initial_sidebar_state="expanded"
 )
 
 # --- Profile Image and Intro Layout ---

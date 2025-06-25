@@ -11,7 +11,8 @@ def load_lottiefile(filepath: str):
 st.set_page_config(
     page_title="My Skills", 
     page_icon="🚀", 
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
 # Title and Header

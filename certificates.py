@@ -13,6 +13,7 @@ st.set_page_config(
     page_title="Certifications", 
     page_icon="🎓", 
     layout="wide", 
+    initial_sidebar_state="expanded"
 )
 
 # Header section
