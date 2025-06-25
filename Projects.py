@@ -31,9 +31,9 @@ with st.container():
     with text_col:
         st.write("### 🚕 Uber Trips Data Analysis")
         st.write("""
-        - Cleaned and standardized Uber trip data, addressed missing values, and unified ride categories for accurate analysis.
-        - Explored trends in ride frequency, fare efficiency, and cancellation rates using visualizations and statistical metrics.
-        - Revealed UberX as the dominant ride type, measured the impact of COVID-19 on trip volume, and provided actionable recommendations to optimize services and pricing strategies.
+            - Cleaned and standardized Uber trip data, addressed missing values, and unified ride categories for accurate analysis.
+            - Explored trends in ride frequency, fare efficiency, and cancellation rates using visualizations and statistical metrics.
+            - Revealed UberX as the dominant ride type, measured the impact of COVID-19 on trip volume, and provided actionable recommendations to optimize services and pricing strategies.
         """)
         with st.expander("🔧 Technologies Used"):
             st.success("- Python, Pandas, NumPy, Matplotlib, Seaborn")
@@ -51,7 +51,7 @@ with st.container():
     with text_col:
         st.write("### 💳 Credit Card Fraud Detection")
         st.write("""
-        - - Cleaned and analyzed highly imbalanced credit card transaction data; performed EDA, statistical analysis, and correlation heatmaps to extract fraud patterns.
+        - Cleaned and analyzed highly imbalanced credit card transaction data; performed EDA, statistical analysis, and correlation heatmaps to extract fraud patterns.
         - Engineered a robust fraud detection pipeline using SMOTE for class balancing and trained a Random Forest classifier with class weighting; achieved 87% precision and 83% recall on unseen data.
         - Evaluated model performance using F1-score (0.85), Matthews Correlation Coefficient (0.85), and confusion matrix to ensure reliability on minority class prediction.
         """)
