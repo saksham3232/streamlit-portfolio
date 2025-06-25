@@ -13,7 +13,7 @@ st.set_page_config(
     page_title="Contact Me",
     page_icon="📞",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="auto"
 )
 
 # --- Load Contact Animation ---
