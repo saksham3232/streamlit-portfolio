@@ -25,6 +25,7 @@ col1, col2 = st.columns([2, 1])
 with col1:
     achievements = [
         "✅ Solved **500+ DSA problems** across LeetCode & GeeksforGeeks using the **Striver A2Z DSA Sheet**.",
+        "🏅 Passed **Software Engineer** & **Software Engineer Intern** role test at HackerRank.",
         "🚀 Semi-Finalist in **Scaler National Coding League - Season 2**.",
         "🎓 Successfully completed **Python Project Bootcamp** and **Java Bootcamp** with LetsUpgrade.",
         "🏅 Certified in **Java (Basic)**, **Problem Solving (Basic & Intermediate)** by HackerRank.",

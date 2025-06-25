@@ -30,14 +30,15 @@ with col2:
 
 with col1:
     st.markdown("""
+        # Welcome to My Portfolio!
         ## Hi, I'm Saksham 👋  
-        # A Data Science Student 🚀  
-
-        By day, I'm diving deep into **Data Structures and Algorithms (DSA)** to sharpen my problem-solving mindset. By night, I immerse myself in **Data Science**, working with real-world datasets to build models in **Machine Learning**, **Deep Learning**, and **Natural Language Processing (NLP)**.  
+        ## A Data Science Student 🚀  
     """)
 
-st.markdown("""
-                    Currently pursuing my Bachelor's in Computer Applications (BCA), I focus on bridging theory with practice through impactful projects. I specialize in tools and frameworks like **Python**, **C++**, **SQL**, **Streamlit**, **Flask**, **pandas**, **NumPy**, **matplotlib**, **Seaborn**, **Scikit-learn**, **TensorFlow**, and **Keras**.
+st.markdown("""         
+        By day, I'm diving deep into **Data Structures and Algorithms (DSA)** to sharpen my problem-solving mindset. By night, I immerse myself in **Data Science**, working with real-world datasets to build models in **Machine Learning**, **Deep Learning**, and **Natural Language Processing (NLP)**.  
+            
+        Currently pursuing my Bachelor's in Computer Applications (BCA), I focus on bridging theory with practice through impactful projects. I specialize in tools and frameworks like **Python**, **C++**, **SQL**, **Streamlit**, **Flask**, **pandas**, **NumPy**, **matplotlib**, **Seaborn**, **Scikit-learn**, **TensorFlow**, and **Keras**.
 
         🧠 My interest lies in making data-driven decisions and turning raw data into actionable insights. Whether it’s **fraud detection**, **sentiment analysis**, or **score prediction**, I love creating models that **solve real problems**.
 

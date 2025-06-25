@@ -17,7 +17,7 @@ st.set_page_config(
 )
 
 # Load a Lottie animation for the contact page
-lottie_contact = load_lottiefile("animations/connect.json")
+lottie_contact = load_lottiefile("animations/gmail.json")
 
 # Custom CSS only for the submit button (contact-form container block removed)
 st.markdown(
