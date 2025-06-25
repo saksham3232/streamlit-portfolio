@@ -7,7 +7,7 @@ def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
 # Page Configuration
-st.set_page_config(page_title="My Achievements", page_icon="🏆", layout="wide")
+st.set_page_config(page_title="My Achievements", page_icon="🏆", layout="wide", initial_sidebar_state='auto')
 
 # Title and Header
 st.markdown("""
@@ -86,3 +86,17 @@ st.markdown(
     '<div class="footer"><b>Made with ❤️ by Saksham | © 2025</b></div>',
     unsafe_allow_html=True
 )
+
+# --- JavaScript to Auto-Collapse Sidebar on Mobile ---
+st.markdown("""
+    <script>
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    if (mediaQuery.matches) {
+        const sidebar = parent.document.querySelector('.css-1lcbmhc.e1fqkh3o3');
+        if (sidebar && sidebar.style.display !== 'none') {
+            const toggleButton = parent.document.querySelector('[data-testid="collapsedControl"]');
+            if (toggleButton) toggleButton.click();
+        }
+    }
+    </script>
+""", unsafe_allow_html=True)

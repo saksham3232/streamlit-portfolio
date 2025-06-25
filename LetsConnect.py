@@ -13,7 +13,7 @@ st.set_page_config(
     page_title="Contact Me",
     page_icon="📞",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="auto"
 )
 
 # --- Load Contact Animation ---
@@ -46,11 +46,14 @@ def submit_to_formsubmit(name, email, message):
         "message": message,
         "_captcha": "false",
         "_template": "box",
-        "_subject": "New Contact Form Submission",
-        # "_next": "https://saksham's-portfolio.streamlit.com/thank-you"
+        "_subject": "New Contact Form Submission"
     }
-    response = requests.post(form_url, data=data)
+    headers = {
+        "Content-Type": "application/x-www-form-urlencoded"
+    }
+    response = requests.post(form_url, data=data, headers=headers)
     return response.status_code == 200
+
 
 # --- Page Title ---
 st.title("Contact Me")
@@ -104,3 +107,17 @@ st.markdown(
     '<div class="footer"><b>Made with ❤️ by Saksham | © 2025</b></div>',
     unsafe_allow_html=True
 )
+
+# --- JavaScript to Auto-Collapse Sidebar on Mobile ---
+st.markdown("""
+    <script>
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    if (mediaQuery.matches) {
+        const sidebar = parent.document.querySelector('.css-1lcbmhc.e1fqkh3o3');
+        if (sidebar && sidebar.style.display !== 'none') {
+            const toggleButton = parent.document.querySelector('[data-testid="collapsedControl"]');
+            if (toggleButton) toggleButton.click();
+        }
+    }
+    </script>
+""", unsafe_allow_html=True)

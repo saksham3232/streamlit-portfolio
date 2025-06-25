@@ -14,7 +14,7 @@ st.set_page_config(
     page_title="Saksham's Portfolio",
     page_icon=":wave:",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="auto"
 )
 
 # --- Profile Image and Intro Layout ---
@@ -98,3 +98,17 @@ st.markdown(
     '<div class="footer"><b>Made with ❤️ by Saksham | © 2025</b></div>',
     unsafe_allow_html=True
 )
+
+# --- JavaScript to Auto-Collapse Sidebar on Mobile ---
+st.markdown("""
+    <script>
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    if (mediaQuery.matches) {
+        const sidebar = parent.document.querySelector('.css-1lcbmhc.e1fqkh3o3');
+        if (sidebar && sidebar.style.display !== 'none') {
+            const toggleButton = parent.document.querySelector('[data-testid="collapsedControl"]');
+            if (toggleButton) toggleButton.click();
+        }
+    }
+    </script>
+""", unsafe_allow_html=True)
