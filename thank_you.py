@@ -13,11 +13,10 @@ st.set_page_config(
     page_title="Thank You",
     page_icon="✅",
     layout="centered",
-    initial_sidebar_state='auto',
 )
 
 # Load animation
-lottie_thank_you = load_lottiefile("animations/thank_you.json")  # Replace with your path
+lottie_thank_you = load_lottiefile("animations/thank_you.json")
 
 # Display
 st.title("🎉 Thank You!")
@@ -34,17 +33,3 @@ st.markdown(
     "<hr><div style='text-align: center; color: gray;'>Made with ❤️ by Saksham | © 2025</div>",
     unsafe_allow_html=True
 )
-
-# --- JavaScript to Auto-Collapse Sidebar on Mobile ---
-st.markdown("""
-    <script>
-    const mediaQuery = window.matchMedia('(max-width: 768px)');
-    if (mediaQuery.matches) {
-        const sidebar = parent.document.querySelector('.css-1lcbmhc.e1fqkh3o3');
-        if (sidebar && sidebar.style.display !== 'none') {
-            const toggleButton = parent.document.querySelector('[data-testid="collapsedControl"]');
-            if (toggleButton) toggleButton.click();
-        }
-    }
-    </script>
-""", unsafe_allow_html=True)
