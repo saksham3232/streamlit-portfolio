@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+    <!-- Lottie Web -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Saksham's Portfolio</h2>
+            </div>
+            <div class="nav-menu">
+                <button class="nav-item active" data-page="home">
+                    <i class="fas fa-home"></i> Home
+                </button>
+                <button class="nav-item" data-page="skills">
+                    <i class="fas fa-palette"></i> My Skills
+                </button>
+                <button class="nav-item" data-page="projects">
+                    <i class="fas fa-briefcase"></i> My Projects
+                </button>
+                <button class="nav-item" data-page="certificates">
+                    <i class="fas fa-trophy"></i> My Certificates
+                </button>
+                <button class="nav-item" data-page="achievements">
+                    <i class="fas fa-medal"></i> See My Achievements
+                </button>
+                <button class="nav-item" data-page="contact">
+                    <i class="fas fa-comments"></i> Let's Connect
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="container">
+                <div class="intro-layout">
+                    <div class="intro-content">
+                        <h1>Welcome to My Portfolio!</h1>
+                        <h2>Hi, I'm Saksham 👋</h2>
+                        <h2>A Data Science Student 🚀</h2>
+                        
+                        <div class="intro-text">
+                            <p>By day, I'm diving deep into <strong>Data Structures and Algorithms (DSA)</strong> to sharpen my problem-solving mindset. By night, I immerse myself in <strong>Data Science</strong>, working with real-world datasets to build models in <strong>Machine Learning</strong>, <strong>Deep Learning</strong>, and <strong>Natural Language Processing (NLP)</strong>.</p>
+                            
+                            <p>Currently pursuing my Bachelor's in Computer Applications (BCA), I focus on bridging theory with practice through impactful projects. I specialize in tools and frameworks like <strong>Python</strong>, <strong>C++</strong>, <strong>SQL</strong>, <strong>Streamlit</strong>, <strong>Flask</strong>, <strong>pandas</strong>, <strong>NumPy</strong>, <strong>matplotlib</strong>, <strong>Seaborn</strong>, <strong>Scikit-learn</strong>, <strong>TensorFlow</strong>, and <strong>Keras</strong>.</p>
+
+                            <p>🧠 My interest lies in making data-driven decisions and turning raw data into actionable insights. Whether it's <strong>fraud detection</strong>, <strong>sentiment analysis</strong>, or <strong>score prediction</strong>, I love creating models that <strong>solve real problems</strong>.</p>
+
+                            <p>⚙️ My journey includes:</p>
+                            <ul>
+                                <li>Building intuitive data apps using <strong>Streamlit</strong></li>
+                                <li>Developing and deploying ML models using <strong>Scikit-learn</strong>, <strong>XGBoost</strong>, and <strong>TensorFlow</strong></li>
+                                <li>Working with <strong>large datasets</strong> and applying <strong>EDA</strong>, <strong>feature engineering</strong>, and <strong>model evaluation</strong></li>
+                                <li>Exploring <strong>LLMs</strong>, AI trends, and <strong>ethical AI</strong> practices</li>
+                            </ul>
+
+                            <p>💼 I've successfully completed <strong>job simulations with Accenture and BCG</strong>, along with solving over <strong>500+ DSA problems</strong> on platforms like LeetCode and GFG using <strong>Striver's A2Z DSA Sheet</strong>.</p>
+
+                            <p>📂 This portfolio showcases my <strong>projects</strong>, <strong>achievements</strong>, and <strong>certifications</strong> — reflecting my growth and dedication in the field of AI and Data Science.</p>
+
+                            <p>🌟 When I'm not coding, you'll find me exploring the latest tech trends, contributing to open-source, or writing blogs on machine learning concepts. I believe in continuous learning and strive to stay at the edge of innovation.</p>
+
+                            <p>📫 Let's connect on <a href="https://www.linkedin.com/in/saksham-maurya-3feb" target="_blank">LinkedIn</a> | <a href="https://github.com/saksham3232" target="_blank">GitHub</a> | <a href="mailto:sakshammaurya3232@gmail.com">Email</a></p>
+
+                            <p>🤝 I'm open to <strong>internships</strong>, <strong>research roles</strong>, and <strong>collaborations</strong> in the field of <strong>AI</strong>, <strong>ML</strong>, or <strong>Data Science</strong>. If you have an idea — let's build it together!</p>
+                        </div>
+
+                        <div class="resume-section">
+                            <p>📄 Here's my resume:</p>
+                            <a href="CV_Saksham.pdf" download="Saksham_Maurya_Resume.pdf" class="download-btn">
+                                <i class="fas fa-download"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                    <div class="intro-profile">
+                        <img src="images/profile.jpg" alt="Saksham Maurya" class="profile-image">
+                    </div>
+                </div>
+                
+                <div class="animation-container">
+                    <lottie-player 
+                        src="animations/intro.json" 
+                        background="transparent" 
+                        speed="1" 
+                        style="width: 300px; height: 300px;" 
+                        loop 
+                        autoplay>
+                    </lottie-player>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Page -->
+        <section id="skills" class="page">
+            <div class="container">
+                <h1 class="page-title">My Skills 🚀</h1>
+                <hr class="title-divider">
+                
+                <div class="skills-layout">
+                    <div class="skills-content">
+                        <div class="skill-category">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>🖥️ Programming Languages</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="skill-tag">C, C++, Java, Python, SQL, HTML, CSS, JavaScript</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>📚 Libraries & Frameworks</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="skill-tag">NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, Streamlit, Flask, TensorFlow, Keras, NLTK</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>📊 Data Science & Analytics</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="skill-tag">Exploratory Data Analysis (EDA), Feature Engineering, Data Preprocessing, Model Evaluation, MLflow</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>🧠 Machine Learning & Deep Learning</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="skill-tag">Supervised & Unsupervised Learning, XGBoost, Neural Networks, Deep Learning, Natural Language Processing (NLP), Computer Vision, Transformers</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>🧮 DSA & Problem Solving</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="skill-tag">Striver A2Z DSA Sheet, LeetCode, GeeksforGeeks, Algorithmic Thinking, Optimization Techniques</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>🛠️ Tools & Platforms</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="skill-tag">Git, GitHub, VS Code, Jupyter Notebook, Google Colab, Anaconda, Docker</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>🗄️ Databases</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="skill-tag">SQL, SQLite</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>💡 Soft Skills</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="skill-tag">Adaptability, Continuous Learning, Problem Solving, Time Management, Discipline, Communication, Teamwork, Creativity & Innovation</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-animation">
+                        <lottie-player 
+                            src="animations/skills.json" 
+                            background="transparent" 
+                            speed="1" 
+                            style="width: 300px; height: 300px;" 
+                            loop 
+                            autoplay>
+                        </lottie-player>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Page -->
+        <section id="projects" class="page">
+            <div class="container">
+                <h1 class="page-title">My Projects 💼</h1>
+                <hr class="title-divider">
+                
+                <!-- Project 1: Uber Trips Data Analysis -->
+                <div class="project">
+                    <div class="project-layout">
+                        <div class="project-animation">
+                            <lottie-player 
+                                src="animations/business-analysis.json" 
+                                background="transparent" 
+                                speed="1" 
+                                style="width: 300px; height: 300px;" 
+                                loop 
+                                autoplay>
+                            </lottie-player>
+                        </div>
+                        <div class="project-content">
+                            <h3>🚕 Uber Trips Data Analysis</h3>
+                            <ul>
+                                <li>Cleaned and standardized Uber trip data, addressed missing values, and unified ride categories for accurate analysis.</li>
+                                <li>Explored trends in ride frequency, fare efficiency, and cancellation rates using visualizations and statistical metrics.</li>
+                                <li>Revealed UberX as the dominant ride type, measured the impact of COVID-19 on trip volume, and provided actionable recommendations to optimize services and pricing strategies.</li>
+                            </ul>
+                            <div class="project-details">
+                                <div class="expander">
+                                    <div class="expander-header">
+                                        <h4>🔧 Technologies Used</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="expander-content">
+                                        <div class="tech-tag">Python, Pandas, NumPy, Matplotlib, Seaborn</div>
+                                    </div>
+                                </div>
+                                <div class="expander">
+                                    <div class="expander-header">
+                                        <h4>📂 Project Link</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="expander-content">
+                                        <a href="https://github.com/saksham3232/Uber-Trips-Data-Analysis" target="_blank" class="project-link">View on GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="project-divider">
+
+                <!-- Project 2: Credit Card Fraud Detection -->
+                <div class="project">
+                    <div class="project-layout">
+                        <div class="project-animation">
+                            <lottie-player 
+                                src="animations/file-searching.json" 
+                                background="transparent" 
+                                speed="1" 
+                                style="width: 300px; height: 300px;" 
+                                loop 
+                                autoplay>
+                            </lottie-player>
+                        </div>
+                        <div class="project-content">
+                            <h3>💳 Credit Card Fraud Detection</h3>
+                            <ul>
+                                <li>Built a machine learning model to detect fraudulent credit card transactions using supervised learning techniques.</li>
+                                <li>Handled imbalanced datasets using SMOTE and various sampling techniques for better model performance.</li>
+                                <li>Achieved high accuracy and precision in fraud detection, helping prevent financial losses.</li>
+                            </ul>
+                            <div class="project-details">
+                                <div class="expander">
+                                    <div class="expander-header">
+                                        <h4>🔧 Technologies Used</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="expander-content">
+                                        <div class="tech-tag">Python, Scikit-learn, Pandas, NumPy, Matplotlib</div>
+                                    </div>
+                                </div>
+                                <div class="expander">
+                                    <div class="expander-header">
+                                        <h4>📂 Project Link</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="expander-content">
+                                        <a href="https://github.com/saksham3232/Credit-Card-Fraud-Detection" target="_blank" class="project-link">View on GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="project-divider">
+
+                <!-- Project 3: IPL Score Prediction -->
+                <div class="project">
+                    <div class="project-layout">
+                        <div class="project-animation">
+                            <lottie-player 
+                                src="animations/gear-loader.json" 
+                                background="transparent" 
+                                speed="1" 
+                                style="width: 300px; height: 300px;" 
+                                loop 
+                                autoplay>
+                            </lottie-player>
+                        </div>
+                        <div class="project-content">
+                            <h3>🏏 IPL Score Prediction</h3>
+                            <ul>
+                                <li>Preprocessed IPL match data (2008–2017) using label encoding, train-test split, and Min-Max feature scaling for neural network input.</li>
+                                <li>Developed and trained a Keras/TensorFlow deep learning regression model to predict total match scores, evaluated using MAE, MSE, RMSE, and R² metrics.</li>
+                                <li>Built both an interactive ipywidgets UI for Jupyter and a Flask web app for real-time score prediction, with model and encoders saved for deployment.</li>
+                            </ul>
+                            <div class="project-details">
+                                <div class="expander">
+                                    <div class="expander-header">
+                                        <h4>🔧 Technologies Used</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="expander-content">
+                                        <div class="tech-tag">Python, TensorFlow, Keras, Flask, Pandas, Scikit-learn</div>
+                                    </div>
+                                </div>
+                                <div class="expander">
+                                    <div class="expander-header">
+                                        <h4>📂 Project Link</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="expander-content">
+                                        <a href="https://github.com/saksham3232/IPL-Score-Prediction" target="_blank" class="project-link">View on GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="project-divider">
+
+                <!-- Project 4: Movie Review Sentiment Analysis -->
+                <div class="project">
+                    <div class="project-layout">
+                        <div class="project-animation">
+                            <lottie-player 
+                                src="animations/customer-service-chat.json" 
+                                background="transparent" 
+                                speed="1" 
+                                style="width: 300px; height: 300px;" 
+                                loop 
+                                autoplay>
+                            </lottie-player>
+                        </div>
+                        <div class="project-content">
+                            <h3>🎬 Movie Review Sentiment Analysis</h3>
+                            <ul>
+                                <li>Developed a sentiment analysis system to classify movie reviews as positive or negative using natural language processing techniques.</li>
+                                <li>Implemented text preprocessing, feature extraction, and machine learning models for accurate sentiment prediction.</li>
+                                <li>Built a Streamlit web application for real-time sentiment analysis of movie reviews.</li>
+                            </ul>
+                            <div class="project-details">
+                                <div class="expander">
+                                    <div class="expander-header">
+                                        <h4>🔧 Technologies Used</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="expander-content">
+                                        <div class="tech-tag">Python, NLTK, Scikit-learn, TensorFlow, Keras, Streamlit</div>
+                                    </div>
+                                </div>
+                                <div class="expander">
+                                    <div class="expander-header">
+                                        <h4>📂 Project Link</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="expander-content">
+                                        <a href="https://github.com/saksham3232/IMDB-Movie-Review-Sentiment-Analysis" target="_blank" class="project-link">View on GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="project-divider">
+
+                <!-- Project 5: Chatbot using Groq API -->
+                <div class="project">
+                    <div class="project-layout">
+                        <div class="project-animation">
+                            <lottie-player 
+                                src="animations/astronaut-with-space-shuttle.json" 
+                                background="transparent" 
+                                speed="1" 
+                                style="width: 300px; height: 300px;" 
+                                loop 
+                                autoplay>
+                            </lottie-player>
+                        </div>
+                        <div class="project-content">
+                            <h3>🤖 Chatbot using Groq API</h3>
+                            <ul>
+                                <li>Integrated Groq LLM API for seamless real-time chatbot interaction, leveraging both .env and Streamlit secrets management for secure API access.</li>
+                                <li>Engineered session-based logic to maintain chat history and context, enabling accurate and contextually aware responses throughout the conversation.</li>
+                                <li>Developed and deployed a user-friendly web application interface using Streamlit, providing an interactive and responsive chat experience.</li>
+                            </ul>
+                            <div class="project-details">
+                                <div class="expander">
+                                    <div class="expander-header">
+                                        <h4>🔧 Technologies Used</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="expander-content">
+                                        <div class="tech-tag">Python, Groq API, Streamlit, dotenv, Streamlit Secrets</div>
+                                    </div>
+                                </div>
+                                <div class="expander">
+                                    <div class="expander-header">
+                                        <h4>📂 Project Link</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="expander-content">
+                                        <a href="https://github.com/saksham3232/chat-bot" target="_blank" class="project-link">View on GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Page -->
+        <section id="certificates" class="page">
+            <div class="container">
+                <h1 class="page-title">🎓 My Certifications</h1>
+                <hr class="title-divider">
+                
+                <div class="certificates-layout">
+                    <div class="certificates-content">
+                        <div class="certificate-item">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>🎓 National Coding League - Season 2 - Scaler</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="cert-tag">🎓 National Coding League - Season 2 - Scaler</div>
+                                    <img src="certificates/scaler.png" alt="Scaler Certificate" class="certificate-image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certificate-item">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>🎓 Data Science and Analytics - Accenture</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="cert-tag">🎓 Data Science and Analytics - Accenture</div>
+                                    <img src="certificates/data_analytics_accenture.png" alt="Accenture Certificate" class="certificate-image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certificate-item">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>🎓 Data Science - BCG</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="cert-tag">🎓 Data Science - BCG</div>
+                                    <img src="certificates/data_science_bcg.png" alt="BCG Certificate" class="certificate-image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certificate-item">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>🎓 Software Engineer Intern - British Airways</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="cert-tag">🎓 Software Engineer Intern - British Airways</div>
+                                    <img src="certificates/software_engineer_intern.png" alt="British Airways Certificate" class="certificate-image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certificate-item">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>🎓 Python Bootcamp - LetsUpgrade</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="cert-tag">🎓 Python Bootcamp - LetsUpgrade</div>
+                                    <img src="certificates/python_bootcamp.png" alt="Python Bootcamp Certificate" class="certificate-image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certificate-item">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>🎓 JavaScript Bootcamp - LetsUpgrade</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="cert-tag">🎓 JavaScript Bootcamp - LetsUpgrade</div>
+                                    <img src="certificates/javascript.png" alt="JavaScript Bootcamp Certificate" class="certificate-image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certificate-item">
+                            <div class="expander">
+                                <div class="expander-header">
+                                    <h3>🎓 Postman API Fundamentals - LetsUpgrade</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="expander-content">
+                                    <div class="cert-tag">🎓 Postman API Fundamentals - LetsUpgrade</div>
+                                    <img src="certificates/postman.png" alt="Postman Certificate" class="certificate-image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="certificates-description">
+                            These certifications highlight my consistent learning path in <strong>Data Science</strong>, <strong>Programming</strong>, and <strong>Problem Solving</strong>.
+                            They also reflect my ability to apply concepts in real-world simulations and competitive environments. 📈
+                        </p>
+                    </div>
+                    
+                    <div class="certificates-animation">
+                        <lottie-player 
+                            src="animations/document-certificate.json" 
+                            background="transparent" 
+                            speed="1" 
+                            style="width: 300px; height: 300px;" 
+                            loop 
+                            autoplay>
+                        </lottie-player>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Page -->
+        <section id="achievements" class="page">
+            <div class="container">
+                <h1 class="page-title">🏆 My Achievements</h1>
+                <hr class="title-divider">
+                
+                <div class="achievements-layout">
+                    <div class="achievements-content">
+                        <div class="achievement-item">
+                            <p>✅ Solved <strong>500+ DSA problems</strong> across LeetCode & GeeksforGeeks using the <strong>Striver A2Z DSA Sheet</strong>.</p>
+                        </div>
+                        <div class="achievement-item">
+                            <p>🎯 Completed <strong>Data Science Job Simulations</strong> with <strong>Accenture</strong> and <strong>BCG</strong>.</p>
+                        </div>
+                        <div class="achievement-item">
+                            <p>🚀 Built and deployed <strong>5+ Machine Learning projects</strong> covering domains like fraud detection, sentiment analysis, and predictive modeling.</p>
+                        </div>
+                        <div class="achievement-item">
+                            <p>📊 Mastered <strong>Data Science tools</strong> including Python, Pandas, NumPy, Scikit-learn, TensorFlow, and Keras.</p>
+                        </div>
+                        <div class="achievement-item">
+                            <p>🏆 Participated in <strong>National Coding League Season 2</strong> by Scaler.</p>
+                        </div>
+                        <div class="achievement-item">
+                            <p>💻 Developed proficiency in <strong>multiple programming languages</strong> including Python, C++, Java, and JavaScript.</p>
+                        </div>
+                        <div class="achievement-item">
+                            <p>🔍 Gained expertise in <strong>Natural Language Processing</strong> and <strong>Computer Vision</strong> applications.</p>
+                        </div>
+                        <div class="achievement-item">
+                            <p>🌐 Built interactive web applications using <strong>Streamlit</strong> and <strong>Flask</strong> frameworks.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievements-animation">
+                        <lottie-player 
+                            src="animations/achievements.json" 
+                            background="transparent" 
+                            speed="1" 
+                            style="width: 300px; height: 300px;" 
+                            loop 
+                            autoplay>
+                        </lottie-player>
+                    </div>
+                </div>
+
+                <hr class="project-divider">
+
+                <div class="topics-section">
+                    <h2 class="topics-title">📚 I Like To Talk About</h2>
+                    <div class="topics-grid">
+                        <div class="topic-item">📊 Data Science</div>
+                        <div class="topic-item">🤖 Machine Learning</div>
+                        <div class="topic-item">🧠 Deep Learning</div>
+                        <div class="topic-item">🚀 Artificial Intelligence</div>
+                        <div class="topic-item">🖼️ Computer Vision</div>
+                        <div class="topic-item">📜 Natural Language Processing</div>
+                        <div class="topic-item">📌 Data Structures & Algorithms</div>
+                        <div class="topic-item">💡 Self-Improvement</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="container">
+                <h1 class="page-title">Contact Me</h1>
+                <p class="contact-subtitle">Fill out the form below to get in touch.</p>
+                
+                <div class="contact-layout">
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                        <div id="formMessage" class="form-message"></div>
+                    </div>
+                    
+                    <div class="contact-animation">
+                        <lottie-player 
+                            src="animations/gmail.json" 
+                            background="transparent" 
+                            speed="1" 
+                            style="width: 300px; height: 300px;" 
+                            loop 
+                            autoplay>
+                        </lottie-player>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <b>Made with ❤️ by Saksham | © 2025</b>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
