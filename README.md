@@ -4,16 +4,13 @@ A feature-rich, interactive personal portfolio and project showcase built with [
 
 ## Table of Contents
 
-- [Demo](#demo)
 - [Features](#features)
-- [Screenshots](#screenshots)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Customization](#customization)
 - [Technologies Used](#technologies-used)
 - [Contact](#contact)
-- [License](#license)
 
 ---
 
