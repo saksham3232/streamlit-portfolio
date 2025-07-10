@@ -118,8 +118,8 @@ streamlit-portfolio/
 
 For questions, collaboration, or feedback:
 
-- **Email:** your.email@example.com
-- **LinkedIn:** [your-linkedin](https://linkedin.com/in/your-profile)
+- **Email:** sakshammaurya678@gmail.com
+- **LinkedIn:** [Saksham Maurya](https://linkedin.com/in/saksham-maurya-3feb)
 - **GitHub:** [saksham3232](https://github.com/saksham3232)
 
 ---
