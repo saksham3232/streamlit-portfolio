@@ -1,6 +1,7 @@
 import streamlit as st
 import json
-import requests
+import smtplib
+from email.message import EmailMessage
 from streamlit_lottie import st_lottie
 
 # --- Load Lottie Animation ---
@@ -37,23 +38,28 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- Submit Function ---
-def submit_to_formsubmit(name, email, message):
-    form_url = "https://formsubmit.co/sakshammaurya678@gmail.com"
-    data = {
-        "name": name,
-        "email": email,
-        "message": message,
-        "_captcha": "false",
-        "_template": "box",
-        "_subject": "New Contact Form Submission"
-    }
-    headers = {
-        "Content-Type": "application/x-www-form-urlencoded"
-    }
-    response = requests.post(form_url, data=data, headers=headers)
-    return response.status_code == 200
+# --- SMTP Email Sending Function ---
+def submit_to_smtp(name, email, message):
+    # Define sender email credentials
+    sender_email = "sakshammaurya678@gmail.com"
+    sender_password = "anozxvbkqsjrzyqv"  # Use app password, NOT your Gmail password
 
+    # Compose email
+    msg = EmailMessage()
+    msg['Subject'] = "New Contact Form Submission"
+    msg['From'] = sender_email
+    msg['To'] = sender_email  # Send to yourself
+    msg.set_content(f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}")
+
+    # Send via Gmail SMTP server
+    try:
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+            smtp.login(sender_email, sender_password)
+            smtp.send_message(msg)
+        return True
+    except Exception as e:
+        print(f"Email sending failed: {e}")
+        return False
 
 # --- Page Title ---
 st.title("Contact Me")
@@ -71,7 +77,7 @@ with col1:
 
         if submit_button:
             if name and email and message:
-                success = submit_to_formsubmit(name, email, message)
+                success = submit_to_smtp(name, email, message)
                 if success:
                     st.success("✅ Message sent successfully!")
                 else:
